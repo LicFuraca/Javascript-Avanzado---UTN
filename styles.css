@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+/* GENERALES */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #181d31;
+  color: #e6ddc4;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  color: #678983;
+  text-shadow: 2px 2px #000;
+}
+
+/* HEADER */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2.2rem;
+}
+
+.menu ul {
+  list-style: none;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu ul li {
+  display: inline;
+}
+
+.menu ul li a {
+  padding: 10px;
+  background-color: #e6ddc4;
+  color: #181d31;
+  border-radius: 10px;
+  box-shadow: 2px 3px #678983;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.menu ul li a:hover {
+  box-shadow: none;
+  background-color: rgba(230, 221, 196, 0.8);
+  color: #fff;
+}
+
+/* HOME */
+.home {
+  background-image: url(assets/imagenes/codigo.jpg);
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 56px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px grey, 6px 6px black;
+}
+
+/* CONTENIDO HOME */
+.contenedor-cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 100px 0;
+  padding: 100px 20px;
+}
+
+.card {
+  width: 350px;
+  height: 400px;
+  padding: 1px;
+  border: 5px solid #678983;
+  background-color: #e6ddc4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card a {
+  width: 40%;
+  margin: 36px auto 20px;
+  padding: 10px;
+  background-color: rgb(24, 29, 49);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 2px 3px #678983;
+  text-align: center;
+}
+
+.card a:hover {
+  box-shadow: none;
+  background-color: rgba(24, 29, 49, 0.8);
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+  height: 100px;
+  padding: 40px;
+  background-color: #678983;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+}
+
+footer .footer-contenedor .footer-logo {
+  width: 80px;
+}
+
+footer h3 {
+  font-size: 14px;
+  text-align: center;
+  color: #181d31;
+  width: 50%;
+}
+
+footer span {
+  color: #181d31;
+}
+
+/* HISTORIA */
+.history-container {
+  padding: 100px 20px;
+}
+
+.text {
+  padding: 80px 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.text p {
+  color: #e6ddc4;
+  width: 45%;
+}
+
+.text.special p {
+  width: initial;
+}
+
+.video-container {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.video-card {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 5px;
+  background-color: #000;
+}
+
+.video-container .video-info {
+  padding: 2px 5px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d1d1d;
+}
+
+.video-info button {
+  margin-right: 5px;
+  width: 80px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #e6ddc4;
+  box-shadow: 2px 3px #678983;
+  cursor: pointer;
+}
+
+.video-info button:hover {
+  background-color: rgba(230, 221, 196, 0.7);
+}
+
+.video-info button img {
+  width: auto;
+}
+
+.video-info button.disabled {
+  background-color: #585857;
+  cursor: initial;
+}
+.video-info button:hover.disabled {
+  background-color: #585857;
+}
+/* JUEGO */
+
+.juego {
+  padding: 100px 20px;
+}
+
+.game-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.game-container .game-card {
+  width: 275px;
+  height: 400px;
+  display: flex;
+  border: 2px solid black;
+  background-color: grey;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container .game-card:hover {
+  background-color: #1d1d1d;
+}
+
+.game-container .game-img {
+  height: 400px;
+  width: 275px;
+  cursor: pointer;
+}
+
+.juego .restart-button {
+  padding: 10px 100px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 2px 3px #678983;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: #e6ddc4;
+  color: #181d31;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.juego .restart-button:hover {
+  background-color: rgba(230, 221, 196, 0.7);
+}
+
+/* ANIMACIÓN LOGO */
+.mon2,
+.tec2 {
+  opacity: 0;
+  animation: move-down 1s ease-in forwards 1s;
+}
+
+.mon1,
+.tec1 {
+  opacity: 0;
+  animation: move-down 1s linear forwards;
+}
+
+@keyframes move-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hide {
+  display: none;
+}
